@@ -28,7 +28,7 @@ export function Footer() {
  
           <ul className="flex gap-8 items-center">
             {LINKS.map((link) => (
-              <li>
+              <li key={link.name}>
                 <Typography
                   as="a"
                   href={link.href}
