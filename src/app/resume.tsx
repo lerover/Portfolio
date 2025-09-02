@@ -10,6 +10,7 @@ import {
 } from "@heroicons/react/24/solid";
 import NewResumeButton from "@/components/new-resume-btn";
 import { getImagePrefix } from "../../utils/utils";
+import DownloadButton from "@/components/pdf-download";
 
 const RESUME_ITEMS = [
   {
@@ -38,14 +39,15 @@ export function Resume() {
             Highly skilled and creative Web Developer with experience in crafting visually stunning and functionally robust web applications and mobile applications.
           </Typography>
        
-          <NewResumeButton/>
+          {/* <NewResumeButton/> */}
+          <DownloadButton/>
         </div>
         <div className="col-span-1 grid gap-y-6 lg:ml-auto pr-0 lg:pr-12 xl:pr-32">
         <Image
           width={1024}
           height={1024}
           alt="team work"
-          src={`${getImagePrefix()}image/resume/myResume.png`}
+          src={`${getImagePrefix()}image/resume/resume.png`}
           className="h-[36rem] w-full rounded-xl object-cover lg:object-contain"
         />
         </div>
